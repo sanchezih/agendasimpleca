@@ -14,6 +14,7 @@ CA_MYSQL_SERVER_PORT=3306
 DROP DATABASE IF EXISTS agendasimpleca;
 CREATE DATABASE agendasimpleca;
 USE agendasimpleca;
+
 -- Creacion de la tabla users
 CREATE TABLE users (
      id        INT NOT NULL auto_increment,

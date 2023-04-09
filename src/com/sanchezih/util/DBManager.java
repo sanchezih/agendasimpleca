@@ -6,14 +6,6 @@ import java.sql.Statement;
 
 public class DBManager {
 
-//	private static final String DRIVER = "com.mysql.cj.jdbc.Driver";
-//	private static final String DB_NAME = "userdb";
-//	private static final String DB_PORT = "33060";
-//
-//	private static final String DB_URL = "jdbc:mysql://192.168.2.110:" + DB_PORT + "/" + DB_NAME;
-//	private static final String DB_USERNAME = "root";
-//	private static final String DB_PASSWORD = "Unapassword1234!";
-
 	private static final String DRIVER = "com.mysql.cj.jdbc.Driver";
 	private static final String DB_NAME = "agendasimpleca";
 

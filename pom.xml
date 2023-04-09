@@ -5,7 +5,7 @@
 	<version>1.2</version>
 	<packaging>war</packaging>
 	<name>agendasimpleca</name>
-	<description>poc-jsp-mysql-crud</description>
+	<description>agendasimpleca</description>
 
 	<properties>
 		<jdk.version>11</jdk.version>
@@ -52,7 +52,7 @@
 
 	</dependencies>
 	<build>
-		<finalName>poc-jsp-mysql-crud</finalName>
+		<finalName>agendasimpleca</finalName>
 		<sourceDirectory>src</sourceDirectory>
 		<plugins>
 			<plugin>
