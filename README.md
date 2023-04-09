@@ -10,21 +10,12 @@ CA_MYSQL_SERVER_PORT=3306
 ```
 
 ```
--- -----------------------------------------------------------------------------
 -- Creacion de la base de datos
--- -----------------------------------------------------------------------------
 DROP DATABASE IF EXISTS agendasimpleca;
-
 CREATE DATABASE agendasimpleca;
-
--- -----------------------------------------------------------------------------
 USE agendasimpleca;
-
--- -----------------------------------------------------------------------------
 -- Creacion de la tabla users
--- -----------------------------------------------------------------------------
-CREATE TABLE users
-  (
+CREATE TABLE users (
      id        INT NOT NULL auto_increment,
      firstname VARCHAR(45) DEFAULT NULL,
      lastname  VARCHAR(45) DEFAULT NULL,
@@ -33,26 +24,7 @@ CREATE TABLE users
      PRIMARY KEY (id)
   );
 
--- -----------------------------------------------------------------------------
 -- Inicializacion
--- -----------------------------------------------------------------------------
-INSERT INTO users
-            (firstname,
-             lastname,
-             dob,
-             email)
-VALUES      ( 'Maria',
-              'Fernandez',
-              '1988-07-07',
-              'maria@fernandez.com' );
-
-INSERT INTO users
-            (firstname,
-             lastname,
-             dob,
-             email)
-VALUES      ( 'Jorge',
-              'Leone',
-              '1982-10-07',
-              'jorge@leone.com' );     
+INSERT INTO users (firstname, lastname, dob, email) VALUES ('Maria', 'Fernandez', '1988-07-07', 'maria@fernandez.com');
+INSERT INTO users (firstname, lastname, dob, email) VALUES('Jorge', 'Leone', '1982-10-07', 'jorge@leone.com'); 
 ```
