@@ -1,6 +1,11 @@
 
-# agendasimpleca
-agendasimpleca
+
+# AgendaSimpleCA
+AgendaSimpleCA es una aplicacion que permite dar de alta, modificar y eliminar datos de personas.
+Esta hecha con Java, JSP y MySQL.
+
+## Variables de entorno
+El host en donde corra la aplicacion debera tener configuradas las siguientes variables de entorno:
 
 ```
 CA_MYSQL_SERVER_IP=127.0.0.1
@@ -9,6 +14,9 @@ CA_MYSQL_SERVER_PASSWORD=Unapassword1234!
 CA_MYSQL_SERVER_PORT=3306
 ```
 
+## Motor MySQL
+
+### Script de inicializacion 
 ```
 -- Creacion de la base de datos
 DROP DATABASE IF EXISTS agendasimpleca;
