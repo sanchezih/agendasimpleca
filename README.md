@@ -1,6 +1,8 @@
-
-
 # AgendaSimpleCA
+
+![GitHub last commit](https://img.shields.io/github/last-commit/sanchezih/agendasimpleca)
+![GitHub repo size](https://img.shields.io/github/repo-size/sanchezih/agendasimpleca)
+
 AgendaSimpleCA es una aplicacion que permite dar de alta, modificar y eliminar datos de personas.
 Esta hecha con Java, JSP y MySQL.
 
