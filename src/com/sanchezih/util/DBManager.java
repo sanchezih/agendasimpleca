@@ -16,9 +16,16 @@ public class DBManager {
 
 	private static DBManager instance = null;
 
+	/**
+	 * 
+	 */
 	private DBManager() {
 	}
 
+	/**
+	 * 
+	 * @return
+	 */
 	public static DBManager getInstance() {
 		if (instance == null) {
 			instance = new DBManager();
@@ -26,6 +33,10 @@ public class DBManager {
 		return instance;
 	}
 
+	/**
+	 * 
+	 * @return
+	 */
 	public Connection connect() {
 		Connection connection = null;
 		try {
@@ -38,6 +49,10 @@ public class DBManager {
 		return connection;
 	}
 
+	/**
+	 * 
+	 * @throws Exception
+	 */
 	public void shutdown() throws Exception {
 		Connection connection = connect();
 		Statement statement = connection.createStatement();

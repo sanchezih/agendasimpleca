@@ -15,17 +15,23 @@ import com.sanchezih.dao.UserDao;
 import com.sanchezih.model.User;
 
 public class UserController extends HttpServlet {
-	
+
 	private static final long serialVersionUID = 1L;
 	private static String INSERT_OR_EDIT = "/WEB-INF/pages/user.jsp";
 	private static String LIST_USER = "/WEB-INF/pages/listUser.jsp";
 	private UserDao dao;
 
+	/**
+	 * 
+	 */
 	public UserController() {
 		super();
 		dao = new UserDao();
 	}
 
+	/**
+	 * 
+	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 
@@ -53,6 +59,9 @@ public class UserController extends HttpServlet {
 		view.forward(request, response);
 	}
 
+	/**
+	 * 
+	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		User user = new User();
